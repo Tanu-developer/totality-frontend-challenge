@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import "./Cart.css"
+ import "./Cart.css"
 const Cart = ({ cart, removeFromCart, toggleCheckout }) => {
     const totalCost = cart.reduce((total, item) => total + item.price, 0);
 
     return (
+        
         <div className="cart">
             <h2>Your Cart</h2>
             {cart.map(item => (

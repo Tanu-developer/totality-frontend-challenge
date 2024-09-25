@@ -1,0 +1,62 @@
+.checkout {
+    max-width: 500px;             
+    margin: 20px auto;           
+    padding: 20px;                 
+    border: 1px solid #ddd;      
+    border-radius: 8px;            
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;        
+}
+
+h2 {
+    text-align: center;           
+    color: #333;                  
+}
+
+h3 {
+    text-align: center;           
+    color: #333;                   
+    margin: 20px 0;               
+}
+
+form {
+    display: flex;              
+    flex-direction: column;      
+    gap: 15px;                    
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;                
+    border: 1px solid #ccc;     
+    border-radius: 5px;           
+    font-size: 16px;              
+}
+
+input:focus {
+    border-color: #007BFF;       
+    outline: none;              
+}
+
+button {
+    padding: 10px 15px;         
+    background-color: #007BFF;   
+    color: white;                  
+    border: none;                  
+    border-radius: 5px;           
+    cursor: pointer;               
+    transition: background-color 0.3s;
+     margin-top: 30px;
+}
+
+button:hover {
+    background-color: #0056b3;    
+}
+
+.link-button {
+    margin-top: 10px;       
+    text-align: center;            
+}
+body{
+    background-color: skyblue;
+}

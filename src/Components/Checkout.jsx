@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
+import "./Checkout.css"
 
 const Checkout = ({ cart, toggleCheckout }) => {
     const totalCost = cart.reduce((total, item) => total + item.price, 0);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Implement payment processing logic here
         alert('Booking confirmed!');
         toggleCheckout();
     };
 
     return (
+        
         <div className="checkout">
             <h2>Checkout</h2>
             <form onSubmit={handleSubmit}>
@@ -24,12 +24,11 @@ const Checkout = ({ cart, toggleCheckout }) => {
             </form>
 
             <Link to="/cart">
-
-
             <button onClick={toggleCheckout}>Back to Cart</button>
             </Link>
             
         </div>
+        
     );
 };
 
